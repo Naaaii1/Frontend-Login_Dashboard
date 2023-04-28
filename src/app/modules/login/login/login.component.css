@@ -93,3 +93,53 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+h1{
+  color:white; 
+  font-size:14px; 
+  text-align: center; 
+  font-weight:normal;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+/* CLASS CSS */
+.box {
+  background-image: linear-gradient(rgb(7, 71, 168), rgb(7, 183, 104));
+  border-radius: 18px;
+}
+
+.login-wrapper{
+  background-image: linear-gradient(rgb(7, 183, 104), rgb(7, 71, 168));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.usher-title{
+  color:white; 
+  font-size:16px; 
+  font-weight:bold; 
+  text-align: center;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+.user-pass{
+  align-items: center; 
+  display: relative;
+  border-radius: 18px;
+}
+
+/*ID CSS */
+
+#usherLogo{
+  width: 85%;
+  height: 100%;
+}

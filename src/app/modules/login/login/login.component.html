@@ -1,0 +1,71 @@
+<style>
+  h1{
+    color:white; 
+    font-size:14px; 
+    text-align: center; 
+    font-weight:normal;
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+
+  mat-form-field{
+    width: 100%;
+  }
+
+  /* CLASS CSS */
+  .box {
+    background-image: linear-gradient(rgb(7, 71, 168), rgb(7, 183, 104));
+    border-radius: 18px;
+  }
+
+  .login-wrapper{
+    background-image: linear-gradient(rgb(7, 183, 104), rgb(7, 71, 168));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .usher-title{
+    color:white; 
+    font-size:16px; 
+    font-weight:bold; 
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+
+  .user-pass{
+    align-items: center; 
+    display: relative;
+    border-radius: 18px;
+  }
+
+  /*ID CSS */
+
+  #usherLogo{
+    width: 85%;
+    height: 100%;
+  }
+
+</style>
+
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+      <mat-card-title class="usher-title">
+        <img src="/assets/images/usherlogo.png" alt="usherlogo" id="usherLogo">
+      </mat-card-title>
+    <form class="user-pass">
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput placeholder="Username">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password">
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-stroked-button class="btn-block" style="background-color: rgb(226, 219, 219); color: black; font-size: 15px;
+      font-weight: bold; border-radius: 18px;">Log In</button>
+    </form>
+  </mat-card>
+</div>

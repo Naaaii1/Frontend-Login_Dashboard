@@ -1,0 +1,24 @@
+<mat-toolbar class="dashboardHeader">
+    <div class="header">
+        <img src="/assets/images/usherlogo.png" alt="usherlogo" id="usherLogo">
+        <h1>USHER Dashboard</h1>
+    </div>
+</mat-toolbar>
+
+
+<mat-drawer-container class="dashboard-container">
+    <mat-drawer #drawer mode="side" opened>
+        
+        <mat-list-item role="listitem" routerLink="home"><button class="Dashboard">Dashboard</button></mat-list-item>
+        
+        <mat-list-item role="listitem"><button class="Inventory">Inventory</button></mat-list-item>
+        <mat-list-item role="listitem"><button class="Issues">Issues/Reports</button></mat-list-item>
+        <mat-list-item role="listitem"><button class="Approvals">Approvals</button></mat-list-item>
+    </mat-drawer>
+
+    <mat-drawer-content>
+                <router-outlet>
+
+                </router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
